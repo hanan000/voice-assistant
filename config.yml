@@ -1,0 +1,22 @@
+# config.yaml
+
+
+KEYWORDS: "alexa"
+DEBUG: true
+
+
+ACCESS_KEY: "02B71aBvg1RxnfEWmuRLdfCwZ4yPFIb9QXZUvYA5yklKJTkbZ5NT+Q=="  # for simeranya command (wake-word)
+
+WINDOWS_KEYWORD_PATH: "stt_app/wwd_simeranya/hello-sim-rania_en_windows_v2_2_0.ppn"
+MAC_KEYWORD_PATH: "stt_app/wwd_simeranya/hello-sim-rania_en_mac_v2_2_0.ppn"
+LINUX_KEYWORD_PATH: "stt_app/wwd_simeranya/hello-sim-rania_en_linux_v2_2_0.ppn"
+
+
+ALLOWED_HOSTS: ["127.0.0.1", "localhost", "0.0.0.0"]
+
+# Database configration
+DATABASE_NAME: ''
+DATABASE_USER: ''
+DATABASE_PASS: ''
+DATABASE_HOST: ''
+DATABASE_PORT: ''

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speech Recognition</title>
+</head>
+<body>
+    <div style="text-align: center; padding: 20px;">
+        <h1>Speech Recognition</h1>
+        <form method="post" id="recording-form">
+            {% csrf_token %}
+            <button type="button" id="start-listening">Start Listening</button>
+        </form>
+
+        <hr>
+
+        <div>
+            {% if wake_word_detected %}
+                <p><strong>Wake Word Detected:</strong> {{ wake_word_detected }}</p>
+            {% endif %}
+        </div>
+
+        <div>
+            <p id="listening-status"></p>
+        </div>
+
+        <div>
+            {% if text %}
+                <h2>Detected Text:</h2>
+                <p>{{ text }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("start-listening").addEventListener("click", function () {
+            // Change the button text to indicate recording
+            document.getElementById("start-listening").textContent = "Recording...";
+
+            // Show a status message
+            document.getElementById("listening-status").textContent = "Listening for a command...";
+
+            // Submit the form to start recording
+            document.getElementById("recording-form").submit();
+        });
+    </script>
+</body>
+</html>
