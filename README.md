@@ -18,8 +18,8 @@ This project is a voice-controlled application that utilizes wake word detection
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/voice-controlled-app.git
-   cd voice-controlled-app
+   git https://github.com/hanan000/voice-assistant.git
+   cd voice_assiatnt
 
 Install the required packages using pip or pipenv:
 ```bash
@@ -42,7 +42,3 @@ python manage.py runserver
 
 3. The application listens for the wake word "hello simeranya." When detected, you can give voice commands, and the application will process them using Google Speech Recognition.
 
-
-```
-You can save this content in a file with the ".md" extension (e.g., "README.md") to create a Markdown README file for your project.
-```
